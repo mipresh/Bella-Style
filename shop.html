@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Style</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar" id="topBar">
+  <div class="top-bar-track">
+    <span>
+      For International Customers, please switch currency to USD to enable checkout •
+      Free Nationwide Delivery on Orders Over ₦100,000 •
+      New Arrivals Dropping Weekly •
+    </span>
+    <span>
+      For International Customers, please switch currency to USD to enable checkout •
+      Free Nationwide Delivery on Orders Over ₦100,000 •
+      New Arrivals Dropping Weekly •
+    </span>
+  </div>
+
+  <!-- Close icon -->
+  <i class="fa fa-times close-top-bar" id="closeTopBar"></i>
+</div>
+
+
+<div class="currency-bar">
+  <span class="currency-symbol">₦ NGN</span>
+</div>
+
+<header class="header">
+
+  <div class="logo">BELLA'S STYLE</div>
+
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    </nav>
+
+  <div class="right-section">
+    <div class="search-box desktop-only">
+      <input type="text" placeholder="Search for products">
+      <i class="fa fa-search"></i>
+    </div>
+
+    <div class="icons">
+
+<div class="profile-menu">
+  <i class="fa fa-user profile-icon"></i>
+
+  <div class="profile-dropdown">
+    <!-- Guest Links -->
+    <div class="guest-links">
+       <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+         </div>
+
+    <!-- Member Links -->
+    <div class="member-links">
+      <a href="account.html">My Account</a>
+      <a href="orders.html">Order History</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">My Cart</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Favorites -->
+  <div class="icon-badge">
+    <i class="fa fa-heart" id="favIcon"></i>
+    <span id="favCount">0</span>
+  </div>
+
+  <!-- Cart -->
+  <div class="icon-badge">
+    <i class="fa fa-shopping-bag" id="cartIcon"></i>
+    <span id="cartCount">0</span>
+  </div>
+
+</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- Mobile Menu (only visible <768px) -->
+<nav class="nav-links mobile-only" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+    <a href="wishlist.html">Wishlist</a>
+  <a href="cart.html">Add to Cart</a>
+  <a href="newsletter.html">Newsletter</a>
+  <a href="consultation.html">Consultation</a>
+
+   <!-- CLOSE BUTTON -->
+  <div class="menu-close" id="closeMenu">
+    <i class="fa fa-times"></i>
+  </div>
+</nav>
+</header>
+<body>
+ <a href="https://wa.me/2348079669402" target="_blank" aria-label="WhatsApp">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+ 
+ <script src="script.js">
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  // OPEN menu
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.add("active");
+  });
+
+  // CLOSE menu (X button)
+  if (closeMenu) {
+    closeMenu.addEventListener("click", function () {
+      mobileMenu.classList.remove("active");
+    });
+  }
+
+  // CLOSE when clicking any link
+  document.querySelectorAll("#mobileMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  });
+}); 
+ </script>
+</body>
+</html>

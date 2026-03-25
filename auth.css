@@ -1,0 +1,232 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f7f5f2;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* Wrapper */
+/* AUTH CARD */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f5f2;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Form Boxes */
+.form-box h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Auth button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #6b2e14;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background: #4e1f0d;
+}
+
+/* Google login container */
+.google-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Make Google button full width like inputs */
+.google-login .g_id_signin {
+  width: 100% !important;  /* override inline styles */
+  max-width: 100%;
+  display: flex !important;
+  justify-content: center;
+}
+
+/* Divider if needed */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Forms */
+
+.form-box{
+display:none;
+flex-direction:column;
+}
+
+.form-box.active{
+display:flex;
+}
+
+/* Title */
+
+.form-box h2{
+font-family:'Playfair Display',serif;
+margin-bottom:25px;
+text-align:center;
+color:#1a1a1a;
+}
+
+/* Form layout */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+/* Inputs */
+
+input{
+padding:12px;
+border:1px solid #ddd;
+border-radius:4px;
+font-size:14px;
+transition:0.3s;
+}
+
+input:focus{
+outline:none;
+border-color:#6b2e14;
+}
+
+/* Password box */
+
+.password-box{
+position:relative;
+}
+
+.toggle-password{
+position:absolute;
+right:12px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+color:#888;
+}
+
+/* Button */
+
+.auth-btn{
+padding:12px;
+border:none;
+background:#6b2e14;
+color:white;
+font-weight:500;
+cursor:pointer;
+transition:0.3s;
+}
+
+.auth-btn:hover{
+background:#4e1f0d;
+}
+
+/* Options */
+
+.options{
+display:flex;
+justify-content:space-between;
+font-size:13px;
+}
+
+/* Switch text */
+
+.switch{
+text-align:center;
+font-size:14px;
+margin-top:10px;
+}
+
+.switch a{
+color:#6b2e14;
+text-decoration:none;
+font-weight:500;
+}
+
+/* Links */
+
+a{
+cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:480px){
+
+.auth-card{
+padding:30px 20px;
+}
+
+}
+
+.google-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.google-login .g_id_signin {
+  width: 100% !important;   /* match input width */
+  max-width: 100%;
+  display: flex !important;
+  justify-content: center;
+}

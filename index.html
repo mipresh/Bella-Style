@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Style</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar" id="topBar">
+  <div class="top-bar-track">
+    <span>
+      For International Customers, please switch currency to USD to enable checkout •
+      Free Nationwide Delivery on Orders Over ₦100,000 •
+      New Arrivals Dropping Weekly •
+    </span>
+    <span>
+      For International Customers, please switch currency to USD to enable checkout •
+      Free Nationwide Delivery on Orders Over ₦100,000 •
+      New Arrivals Dropping Weekly •
+    </span>
+  </div>
+
+  <!-- Close icon -->
+  <i class="fa fa-times close-top-bar" id="closeTopBar"></i>
+</div>
+
+
+<div class="currency-bar">
+  <span class="currency-symbol">₦ NGN</span>
+</div>
+
+<header class="header">
+
+  <div class="logo">BELLA'S STYLE</div>
+
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    </nav>
+
+  <div class="right-section">
+    <div class="search-box desktop-only">
+      <input type="text" placeholder="Search for products">
+      <i class="fa fa-search"></i>
+    </div>
+
+    <div class="icons">
+
+<div class="profile-menu">
+  <i class="fa fa-user profile-icon"></i>
+
+  <div class="profile-dropdown">
+    <!-- Guest Links -->
+    <div class="guest-links">
+       <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+         </div>
+
+    <!-- Member Links -->
+    <div class="member-links">
+      <a href="account.html">My Account</a>
+      <a href="orders.html">Order History</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">My Cart</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Favorites -->
+  <div class="icon-badge">
+    <i class="fa fa-heart" id="favIcon"></i>
+    <span id="favCount">0</span>
+  </div>
+
+  <!-- Cart -->
+  <div class="icon-badge">
+    <i class="fa fa-shopping-bag" id="cartIcon"></i>
+    <span id="cartCount">0</span>
+  </div>
+
+</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- Mobile Menu (only visible <768px) -->
+<nav class="nav-links mobile-only" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+    <a href="wishlist.html">Wishlist</a>
+  <a href="cart.html">Add to Cart</a>
+  <a href="newsletter.html">Newsletter</a>
+  <a href="consultation.html">Consultation</a>
+
+   <!-- CLOSE BUTTON -->
+  <div class="menu-close" id="closeMenu">
+    <i class="fa fa-times"></i>
+  </div>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide">
+      <video class="slide-video" autoplay muted loop playsinline webkit-playsinline>
+        <source src="./video/VID-20260302-WA0016.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>Luxury Redefined</h1>
+        <a href="shop.html" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide">
+      <video class="slide-video" autoplay muted loop playsinline webkit-playsinline>
+        <source src="./video/VID-20260302-WA0001.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>Queen's Men</h1>
+        <a href="shop.html" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="dual-banner">
+
+  <div class="banner-card">
+    <img src="./images/Screenshot_2026-03-02-16-41-21-37.jpg" alt="Queens Men">
+    <div class="banner-content">
+      <h3>Bella Style</h3>
+      <a href="shop.html" class="banner-btn">Shop Now</a>
+    </div>
+  </div>
+
+ 
+    <div class="banner-card">
+    <img src="./images/IMG-20260302-WA0005.jpg" alt="Queens Men">
+    <div class="banner-content">
+      <h3>Queen's Men</h3>
+      <a href="shop2.html" class="banner-btn">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+  <h2>Top Categories</h2>
+
+  <div class="category-grid">
+
+    <div class="category-card">
+      <img src="img1.jpg" alt="">
+      <h4>Best Sellers</h4>
+    </div>
+
+    <div class="category-card">
+      <img src="img2.jpg" alt="">
+      <h4>New In</h4>
+    </div>
+
+    <div class="category-card">
+      <img src="img3.jpg" alt="">
+      <h4>Jumpsuits</h4>
+    </div>
+
+  </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="new-arrivals">
+  <h2>New Arrivals</h2>
+
+  <div class="product-grid">
+
+ <div class="product-card">
+
+<div class="fav-btn">
+<i class="fa fa-heart"></i>
+</div>
+
+<img src="dress1.jpg">
+
+<h5>Elegant Satin Dress</h5>
+
+<p class="price">₦95,000</p>
+
+<button 
+class="add-to-cart" 
+data-name="Elegant Satin Dress"
+data-price="95000">
+Add to Cart
+</button>
+
+</div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress2.jpg">
+      <h5>Classic Evening Gown</h5>
+      <p class="price">₦120,000</p>
+    </div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress3.jpg">
+      <h5>Luxury Party Dress</h5>
+      <p class="price">₦110,000</p>
+    </div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress4.jpg">
+      <h5>Silk Two Piece</h5>
+      <p class="price">₦89,000</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="new-arrivals">
+  <h2>New Arrivals</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress1.jpg">
+      <h5>Elegant Satin Dress</h5>
+      <p class="price">₦95,000</p>
+    </div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress2.jpg">
+      <h5>Classic Evening Gown</h5>
+      <p class="price">₦120,000</p>
+    </div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress3.jpg">
+      <h5>Luxury Party Dress</h5>
+      <p class="price">₦110,000</p>
+    </div>
+
+    <div class="product-card">
+        <div class="fav-btn">
+    <i class="fa fa-heart"></i>
+  </div>
+      <img src="dress4.jpg">
+      <h5>Silk Two Piece</h5>
+      <p class="price">₦89,000</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Our Story -->
+<section class="our-story">
+  <div class="story-text">
+    <h2>Our Story</h2>
+    <p>
+      We design timeless luxury pieces crafted with elegance and sophistication.
+      Every collection reflects confidence, femininity and class.
+    </p>
+    <button class="btn-primary"><a href ="about.html">About Us</a></button>
+  </div>
+
+  <div class="story-image">
+    <img src="story.jpg">
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+  <div>
+    <h3>BELLA STYLE</h3>
+    <p>Enugu, Nigeria</p>
+  </div>
+
+  <div>
+    <h4>Store Links</h4>
+    <p>Home</p>
+    <p>Shop</p>
+  </div>
+
+  <div>
+    <h4>Useful Links</h4>
+    <p>About Us</p>
+    <p>FAQs</p>
+    <a href="https://wa.me/2348079669402" target="_blank" aria-label="WhatsApp">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/yourbrand" target="_blank" aria-label="Instagram">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </div>
+  </div>
+
+  <div>
+    <h4>Newsletter Signup</h4>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+    <button class="btn-primary">Subscribe</button>
+  </div>
+
+</footer>
+ <script src="script.js">
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  // OPEN menu
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.add("active");
+  });
+
+  // CLOSE menu (X button)
+  if (closeMenu) {
+    closeMenu.addEventListener("click", function () {
+      mobileMenu.classList.remove("active");
+    });
+  }
+
+  // CLOSE when clicking any link
+  document.querySelectorAll("#mobileMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+    });
+  });
+}); 
+ </script>
+</body>
+</html>

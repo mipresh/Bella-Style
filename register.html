@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Account - Bella Style</title>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<link rel="stylesheet" href="auth.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+ 
+<div class="auth-wrapper">
+
+<div class="auth-card">
+
+<!-- SIGN IN -->
+<div class="form-box login">
+
+<form id="loginForm">
+   
+  <div class="google-login">
+
+<div id="g_id_onload"
+     data-client_id="901192936913-mj6rvnbi56ti0ulaac4gk5qqkmv79otg.apps.googleusercontent.com"
+     data-callback="handleGoogleLogin">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-size="large"
+     data-theme="outline"
+     data-text="sign_in_with"
+     data-shape="rectangular"
+     data-logo_alignment="left">
+</div>
+
+</div>
+
+<p class="switch">
+Don't have an account?
+<a href="#" id="showRegister">Sign Up</a>
+</p>
+
+</form>
+
+</div>
+
+
+<!-- REGISTER -->
+<div class="form-box register">
+
+<h2>Create Account</h2>
+
+<form id="registerForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<div class="input-box password-box">
+
+<input type="password" placeholder="Password" id="registerPassword" required>
+
+<i class="fa fa-eye toggle-password"></i>
+
+</div>
+
+<div class="input-box password-box">
+
+<input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+
+<i class="fa fa-eye toggle-password"></i>
+
+</div>
+
+<button type="submit" class="auth-btn">Sign Up</button>
+
+<p class="switch">
+Already have an account?
+<a href="#" id="showLogin">Sign In</a>
+</p>
+
+</form>
+
+</div>
+
+
+<!-- FORGOT PASSWORD -->
+<div class="form-box forgot">
+
+<h2>Reset Password</h2>
+
+<form>
+
+<input type="email" placeholder="Enter your email" required>
+
+<button class="auth-btn">Send Reset Link</button>
+
+<p class="switch">
+Back to
+<a href="#" id="backLogin">Sign In</a>
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="auth.js"></script>
+
+</body>
+</html>
