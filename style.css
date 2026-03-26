@@ -349,28 +349,13 @@ body {
    MOBILE RESPONSIVE
 ================================ */
 @media (max-width: 768px) {
-  .hero {
-    height: 70vh;
-  }
-
+  .hero,
   .hero-slide {
-    height: 70vh;
+    height: 55vh; /* instead of 70vh */
   }
 
-  .hero-content {
-    bottom: 24px;
-    left: 20px;
-    right: 20px;
-    max-width: 100%;
-  }
-
-  .hero-content h1 {
-    font-size: 28px;
-  }
-
-  .btn-primary {
-    padding: 10px 24px;
-    font-size: 14px;
+  .slide-video {
+    object-fit: cover; /* ensures nice crop */
   }
 }
 
@@ -378,10 +363,14 @@ body {
    SMALL MOBILE
 ================================ */
 @media (max-width: 480px) {
-  .hero {
-    height: 65vh;
+   .hero,
+  .hero-slide {
+    height: 55vh; /* instead of 70vh */
   }
 
+  .slide-video {
+    object-fit: cover; /* ensures nice crop */
+  }
   .hero-content h1 {
     font-size: 24px;
   }
@@ -502,8 +491,14 @@ body {
 }
 
 @media (max-width:768px){
-  .category-grid{
-    grid-template-columns: 1fr;
+   .category-grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 per row */
+    gap: 20px;
+  }
+
+  .category-card img {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -847,4 +842,15 @@ a{
   font-size: 24px;
   cursor: pointer;
   z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    overflow-y: auto;
+    padding: 80px 20px 40px;
+  }
+
+  .mobile-only a {
+    font-size: 14px;
+  }
 }
