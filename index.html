@@ -346,30 +346,7 @@ Add to Cart
 
 </footer>
  <script src="script.js">
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const closeMenu = document.getElementById("closeMenu");
 
-  // OPEN menu
-  hamburger.addEventListener("click", function () {
-    mobileMenu.classList.add("active");
-  });
-
-  // CLOSE menu (X button)
-  if (closeMenu) {
-    closeMenu.addEventListener("click", function () {
-      mobileMenu.classList.remove("active");
-    });
-  }
-
-  // CLOSE when clicking any link
-  document.querySelectorAll("#mobileMenu a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.remove("active");
-    });
-  });
-}); 
  </script>
 </body>
 </html>
