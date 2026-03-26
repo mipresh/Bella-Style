@@ -4,6 +4,10 @@
   --text-dark: #1a1a1a;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +90,12 @@ body {
 
 .currency-symbol:hover {
   color: #6b2e14; /* brand brown */
+}
+
+@media (max-width: 768px) {
+  .currency-bar {
+    padding: 10px 15px;
+  }
 }
 
 /* Header */
@@ -184,6 +194,16 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
+}
+
+.header,
+.right-section,
+.icons {
+  min-width: 0;
+}
+
+.right-section {
+  flex-shrink: 1;
 }
 
 /* Right section */
@@ -454,10 +474,13 @@ body {
 }
 
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .dual-banner {
-    flex-direction: column;
-    padding: 80px 20px;
+    padding: 40px 15px;
+  }
+
+  .banner-card {
+    width: 100%;
   }
 
   .banner-left,
@@ -479,6 +502,7 @@ body {
   background: var(--light-bg);
   padding: 80px;
   text-align: center;
+
 }
 
 .categories h2 {
@@ -493,15 +517,19 @@ body {
 }
 
 @media (max-width:768px){
-   .category-grid {
-    grid-template-columns: repeat(3, 1fr); /* 2 per row */
-    gap: 20px;
+   .categories {
+    padding: 40px 15px;
   }
 
-  .category-card img {
-    width: 120px;
-    height: 120px;
+   .category-grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 per row */
+    gap: 15px;
   }
+ .category-card img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+}
 }
 
 .category-card img {
@@ -633,16 +661,44 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  .new-arrivals {
+    padding: 40px 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .header {
-    padding: 20px;
+    padding: 15px 15px; /* reduce from 80px */
+    position:sticky;
   }
 
-  .nav-links {
-    display: none;
+  .logo {
+    font-size: 16px;
   }
 
+  .right-section {
+    gap: 10px;
+  }
+
+  .icons {
+    gap: 12px;
+  }
+
+  .icon-badge i {
+    font-size: 16px;
+  }
+}
   .category-grid {
     flex-direction: column;
     align-items: center;
