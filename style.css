@@ -515,12 +515,12 @@ body {
 
    .category-grid {
     grid-template-columns: repeat(3, 1fr); /* 2 per row */
-    gap: 10px;
+    gap: 5px;
   }
 
   .category-card img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     max-width: 120px;
   }
 }
@@ -923,4 +923,21 @@ a{
 .search-box{
 display:none;
 }
+}
+
+
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .footer h3, .footer h4 {
+    font-size: 14px;
+  }
+
+  .footer input {
+    padding: 8px;
+  }
 }
