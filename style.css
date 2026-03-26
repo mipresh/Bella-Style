@@ -465,8 +465,10 @@ body {
     margin: 0;
   }
 
-  .banner-card {
+
+   .banner-card img {
     height: 300px;
+    object-fit: cover;
   }
 }
 
@@ -854,3 +856,4 @@ a{
     font-size: 14px;
   }
 }
+
