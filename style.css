@@ -515,7 +515,7 @@ body {
 
    .category-grid {
     grid-template-columns: repeat(3, 1fr); /* 2 per row */
-    gap: 15px;
+    gap: 10px;
   }
 
   .category-card img {
@@ -657,7 +657,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    padding: 15px 15px; /* reduce from 80px */
+    padding: 15px; /* reduce from 80px */
   }
 
   .logo {
@@ -665,11 +665,11 @@ body {
   }
 
   .right-section {
-    gap: 10px;
+    gap: 8px;
   }
 
   .icons {
-    gap: 12px;
+    gap: 10px;
   }
 
   .icon-badge i {
@@ -899,4 +899,28 @@ a{
 
 .right-section {
   flex-shrink: 1;
+}
+
+.icons,
+.hamburger {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex: 1;
+    min-width: 0;
+    font-size: 16px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+@media (max-width: 768px) {
+.search-box{
+display:none;
+}
 }
