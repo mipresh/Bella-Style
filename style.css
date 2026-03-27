@@ -513,15 +513,26 @@ body {
     padding: 40px 15px;
   }
 
-   .category-grid {
-    grid-template-columns: repeat(3, 1fr); /* 2 per row */
-    gap: 5px;
+  
+
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    display: flex;              /* switch from grid → flex */
+    gap: 15px;
+    overflow-x: auto;           /* enable horizontal scroll */
+    padding-bottom: 10px;
+
+    scroll-snap-type: x mandatory; /* smooth snapping */
   }
 
-  .category-card img {
-    width: 80%;
-    height: 80%;
-    max-width: 120px;
+  .category-card {
+    flex: 0 0 auto;             /* prevent shrinking */
+    width: 120px;               /* fixed width */
+    text-align: center;
+
+    scroll-snap-align: start;
   }
 }
 
